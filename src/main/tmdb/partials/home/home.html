@@ -1,0 +1,8 @@
+<div>
+	<h3>Popular Movies</h3>
+<!-- 	<ol>
+		<li ng-repeat="x in view.movies.results"> <a href="/#/movie/{{x.id}}" style="color: #00008B"> <b>{{x.title}}</b> </a> ({{x.popularity | number:0}}%) <movie-tile ng-model="x"/></li>
+	</ol> -->
+	<div class="row">
+	<div ng-repeat="x in view.movies.results" class= "col-md-2"> <movie-tile ng-model="x"> </movie-tile> </div>
+</div>
